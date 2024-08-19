@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h2>Criminals Database</h2>
+
+    <div class="action-buttons">
+        <a href="{% url 'add-criminal' %}" class="btn btn-primary">Add Criminal</a>
+        <a href="{% url 'search' %}" class="btn btn-secondary">Search/Sort</a>
+    </div>
+
+    <div class="criminals-list">
+        <h3>Registered Criminals:</h3>
+        <ul>
+            {% for criminal in criminals %}
+            <li>
+                <a href="{% url 'criminal-details' criminal.id %}">
+                    {{ criminal.name }} <span class="small">({{ criminal.crime }})</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</div>
+{% endblock %}

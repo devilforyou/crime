@@ -1,0 +1,161 @@
+body {
+    font-family: sans-serif;
+    background-color: #f2f2f2; /* Light grey background */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    background-color: #fff; /* White background for header */
+    padding: 20px 0;
+}
+
+.logo {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.card {
+    background-color: #fff; /* White background for cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #dc3545; /* Red heading */
+    margin-bottom: 10px;
+}
+
+.small {
+    font-size: 0.8em;
+    color: #6c757d; /* Grey for smaller text */
+}
+
+footer {
+    background-color: #343a40; /* Black footer */
+    color: #fff; /* White text in footer */
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.login-card {
+    width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+input[type="text"], 
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #dc3545; /* Red button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 5px 0;
+}
+
+.details {
+    margin-top: 20px;
+}
+
+.details p {
+    margin-bottom: 5px;
+}
+
+/* ... your existing styles ... */
+
+.action-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.action-buttons .btn {
+    margin: 0 10px;
+}
+
+.criminals-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.criminals-list li {
+    padding: 5px 0;
+}
+
+.criminals-list a {
+    color: #333; /* Dark grey link color */
+    text-decoration: none;
+}
+
+.criminals-list a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #dc3545; /* Red button */
+    color: #fff; /* White text */
+}
+
+.btn-primary:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.btn-secondary {
+    background-color: #343a40; /* Dark grey button */
+    color: #fff; /* White text */
+}
+
+.btn-secondary:hover {
+    background-color: #212529; /* Darker grey on hover */
+}
+
+/* ... your existing styles ... */

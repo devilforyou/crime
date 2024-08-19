@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card">
+    <h2>Search Criminals</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Search</button>
+    </form>
+    <h3>Results:</h3>
+    <ul>
+        {% for criminal in criminals %}
+        <li>
+            <a href="{% url 'criminal-details' criminal.id %}">
+                {{ criminal.name }} 
+                <span class="small">({{ criminal.crime }})</span>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

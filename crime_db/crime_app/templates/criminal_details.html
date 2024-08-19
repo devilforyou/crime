@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card">
+    <h2>Criminal Details</h2>
+    <div class="details">
+        <h3>{{ criminal.name }}</h3>
+        <p><strong>Age:</strong> {{ criminal.age }}</p>
+        <p><strong>Crime:</strong> {{ criminal.crime }}</p>
+        <p><strong>Jail:</strong> {{ criminal.jail_location }} - Cell: {{ criminal.cell_no }}</p>
+        <p><strong>Health:</strong> {{ criminal.health_condition }}</p>
+    </div>
+</div>
+{% endblock %}
